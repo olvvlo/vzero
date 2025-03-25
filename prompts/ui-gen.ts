@@ -199,7 +199,7 @@ ${currentCode}
         ],
       },
     ],
-    "gpt-4o"
+    "deepseek-chat"
   );
   console.log(JSON.stringify(usage, null, 2));
 
