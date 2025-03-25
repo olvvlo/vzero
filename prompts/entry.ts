@@ -17,6 +17,7 @@ const entry = labels.has("ui-gen")
 if (!entry) {
   throw new Error("unknown entry");
 } else {
+  console.log(123, entry);
   const module = await import(join(__dirname, `./${entry}.ts`));
   module.main?.();
 }
