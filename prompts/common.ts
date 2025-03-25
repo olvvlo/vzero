@@ -18,6 +18,7 @@ const apiKey = Deno.env.get("OPENAI_API_KEY");
 assert(apiKey, "failed to get openAI API key");
 
 const openai = new OpenAI({
+  baseURL: 'https://api.deepseek.com',
   apiKey: apiKey,
 });
 
